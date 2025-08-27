@@ -1,16 +1,16 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Axiom",
-  description: "Commerce, rebuilt for the real world.",
-  icons: { icon: [{ url: "/favicon-32.png", type: "image/png", sizes: "32x32" }] },
+  title: "Axiom — Frictionless Commerce, Loyalty & Axiom Coin",
+  description:
+    "Axiom is reimagining in-venue and everyday commerce with AI, Just-In-Time offers, and Axiom Coin.",
   themeColor: "#0b0d10",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-white text-black dark:bg-ax-bg dark:text-ax-ink">
+      <body className="min-h-screen bg-[#0b0d10] text-white antialiased">
         {children}
       </body>
     </html>
