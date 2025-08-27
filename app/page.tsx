@@ -1,7 +1,6 @@
 export default function HomePage() {
   return (
     <main className="mx-auto max-w-6xl px-6 py-20">
-      {/* Hero */}
       <section className="text-center">
         <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">
           Stealth, but hiring
@@ -15,32 +14,24 @@ export default function HomePage() {
           across retail, travel, hospitality, and our flagship sports & events
           facility.
         </p>
-
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-          <a
-            href="#about"
-            className="rounded-xl bg-white px-5 py-3 text-black font-semibold"
-          >
+          <a href="#about" className="rounded-xl bg-white px-5 py-3 text-black font-semibold">
             Learn more
           </a>
-          <a
-            href="#careers"
-            className="rounded-xl border border-white/20 px-5 py-3 text-white/90"
-          >
+          <a href="#careers" className="rounded-xl border border-white/20 px-5 py-3 text-white/90">
             Careers
           </a>
         </div>
       </section>
 
-      {/* What is Axiom */}
       <section id="about" className="mt-20 grid gap-8 md:grid-cols-2">
         <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
           <h2 className="text-2xl font-semibold">What is Axiom?</h2>
           <p className="mt-3 text-white/75">
-            We’re building the rails for “just-in-time” commerce: an AI
-            concierge that can shop across platforms, surface verified prices
-            and availability, and settle with Axiom Coin. The same assistant
-            orchestrates in-venue experiences—entry, lockers, F&amp;B, and more.
+            We’re building the rails for “just-in-time” commerce: an AI concierge that can
+            shop across platforms, surface verified prices & availability, and settle with
+            Axiom Coin. The same assistant orchestrates in-venue experiences—entry, lockers,
+            F&amp;B, and more.
           </p>
         </div>
         <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
@@ -53,40 +44,33 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Facility */}
       <section className="mt-20 rounded-2xl border border-white/10 bg-white/5 p-6">
         <h2 className="text-2xl font-semibold">Flagship Facility</h2>
         <p className="mt-3 text-white/75">
-          We’re designing a next-gen sports &amp; entertainment campus to prove
-          what’s possible when venue operations, loyalty, and AI assistants work
-          as one. Details coming soon.
+          We’re designing a next-gen sports &amp; entertainment campus to prove what’s
+          possible when venue operations, loyalty, and AI assistants work as one. Details
+          coming soon.
         </p>
       </section>
 
-      {/* Careers */}
       <section id="careers" className="mt-20 rounded-2xl border border-white/10 bg-white/5 p-6">
         <h2 className="text-2xl font-semibold">Careers</h2>
         <p className="mt-3 text-white/75">
-          We’re quietly hiring senior builders across product, design, AI/agent
-          systems, and full-stack engineering.
+          We’re quietly hiring senior builders across product, design, AI/agent systems, and
+          full-stack engineering.
         </p>
         <div className="mt-5 flex flex-wrap gap-3">
-          <a
-            className="rounded-xl bg-white px-5 py-3 text-black font-semibold"
-            href="mailto:careers@axiom.com?subject=Interest%20in%20Axiom"
-          >
+          <a className="rounded-xl bg-white px-5 py-3 text-black font-semibold"
+             href="mailto:careers@axiom.com?subject=Interest%20in%20Axiom">
             careers@axiom.com
           </a>
-          <a
-            className="rounded-xl border border-white/20 px-5 py-3 text-white/90"
-            href="mailto:hello@axiom.com?subject=General%20Inquiry"
-          >
+          <a className="rounded-xl border border-white/20 px-5 py-3 text-white/90"
+             href="mailto:hello@axiom.com?subject=General%20Inquiry">
             hello@axiom.com
           </a>
         </div>
       </section>
 
-      {/* Footer note */}
       <p className="mt-16 text-center text-xs text-white/50">
         © {new Date().getFullYear()} Axiom. All rights reserved.
       </p>
