@@ -5,26 +5,26 @@ export default function Home() {
   return (
     <main>
       {/* Hero */}
-      <section className="container pt-16 md:pt-24 pb-10 text-center">
+      <section className="container pt-14 md:pt-20 pb-8 text-center">
         {/* Big logo + tagline */}
         <div className="mx-auto">
           {/* Light mode */}
           <Image
             src="/logo-tagline-light.png"
             alt="AXIOM — Re-imagining frictionless commerce, loyalty & payments"
-            width={1200}
-            height={420}
+            width={800}
+            height={280}
             priority
-            className="mx-auto h-auto w-[min(960px,95vw)] dark:hidden"
+            className="mx-auto h-auto w-[min(720px,92vw)] dark:hidden"
           />
           {/* Dark mode */}
           <Image
             src="/logo-tagline-dark.png"
             alt="AXIOM — Re-imagining frictionless commerce, loyalty & payments"
-            width={1200}
-            height={420}
+            width={800}
+            height={280}
             priority
-            className="mx-auto hidden h-auto w-[min(960px,95vw)] dark:block"
+            className="mx-auto hidden h-auto w-[min(720px,92vw)] dark:block"
           />
         </div>
 
