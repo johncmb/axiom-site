@@ -59,7 +59,7 @@ export default function Home() {
         <div className="ax-glass p-6">
           <h2 className="text-2xl font-bold">Flagship Facility</h2>
           <p className="mt-3 text-ax-sub">
-            We’re designing a next-gen sports & entertainment campus to prove what’s possible
+            We’re designing a next-gen sports & entertainment complex to prove what’s possible
             when venue operations, loyalty, and AI assistants work as one. Details coming soon.
           </p>
         </div>
@@ -74,9 +74,9 @@ export default function Home() {
             and full-stack engineering.
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
-            <a href="mailto:careers@axiom.com" className="ax-link">careers@axiom.com</a>
+            <a href="mailto:careers@axiom.com" className="ax-link">careers@axiomcorp.co</a>
             <span className="text-ax-sub">·</span>
-            <a href="mailto:hello@axiom.com" className="ax-link">hello@axiom.com</a>
+            <a href="mailto:hello@axiom.com" className="ax-link">hello@axiomcorp.co</a>
           </div>
         </div>
       </section>
