@@ -26,7 +26,7 @@ export default function Home() {
         <p className="mx-auto mt-6 max-w-3xl text-lg text-ax-sub">
           Axiom blends AI assistants, real-time competitive pricing, and Axiom Coin to
           remove friction across retail, travel, hospitality, and our flagship sports &
-          entertainment facility.
+          entertainment complex.
         </p>
 
         <div className="mt-8 flex items-center justify-center gap-3">
@@ -89,11 +89,11 @@ export default function Home() {
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
             <a href="mailto:careers@axiomcorp.co" className="ax-link">
-              careers@axiom.com
+              careers@axiomcorp.co
             </a>
             <span className="text-ax-sub">·</span>
             <a href="mailto:hello@axiomcorp.co" className="ax-link">
-              hello@axiom.com
+              hello@axiomcorp.co
             </a>
           </div>
         </div>
