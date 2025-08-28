@@ -10,7 +10,7 @@ export default function Home() {
         <div className="mx-auto flex w-full max-w-6xl flex-col items-center px-4">
           {/* Light mode artwork */}
           <Image
-            src="/logo-tagline-light.svg"
+            src="/logo-tagline-light.png"
             alt="AXIOM — Re-imagining frictionless commerce, loyalty, and payments."
             width={1200}
             height={420}
@@ -19,7 +19,7 @@ export default function Home() {
           />
           {/* Dark mode artwork */}
           <Image
-            src="/logo-tagline-dark.svg"
+            src="/logo-tagline-dark.png"
             alt="AXIOM — Re-imagining frictionless commerce, loyalty, and payments."
             width={1200}
             height={420}
