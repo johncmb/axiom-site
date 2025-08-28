@@ -1,4 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* App background: subtle radial + vertical gradient */
 :root { color-scheme: dark; }
-* { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
-body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial; }
+html,body { height: 100%; }
+body {
+  @apply bg-ax-bg text-ax-ink antialiased;
+  background:
+    radial-gradient(800px 600px at 80% -20%, rgba(255,138,61,0.25), transparent 60%),
+    radial-gradient(700px 500px at -10% 10%, rgba(255,106,0,0.18), transparent 55%),
+    linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0)) ;
+}
+
+/* Glass card */
+.ax-glass {
+  @apply bg-white/5 border border-white/10 backdrop-blur rounded-2xl shadow-soft;
+}
+
+/* Orange gradient */
+.ax-gradient {
+  background: linear-gradient(135deg, #ff8a3d 0%, #ff6a00 100%);
+}
+
+/* Link style */
+a.ax-link { @apply underline decoration-white/30 underline-offset-4 hover:decoration-ax-orange; }
+
+/* Simple container */
+.container { @apply max-w-6xl mx-auto px-4; }
