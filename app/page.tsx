@@ -8,13 +8,23 @@ export default function Home() {
       <section className="container pt-16 md:pt-24 pb-10 text-center">
         {/* Big logo + tagline */}
         <div className="mx-auto">
+          {/* Light mode */}
           <Image
-            src="/logo-tagline.png"              // ← put your file at /public/logo-tagline.png
+            src="/logo-tagline-light.png"
             alt="AXIOM — Re-imagining frictionless commerce, loyalty & payments"
             width={1200}
             height={420}
             priority
-            className="mx-auto h-auto w-[min(960px,95vw)]"
+            className="mx-auto h-auto w-[min(960px,95vw)] dark:hidden"
+          />
+          {/* Dark mode */}
+          <Image
+            src="/logo-tagline-dark.png"
+            alt="AXIOM — Re-imagining frictionless commerce, loyalty & payments"
+            width={1200}
+            height={420}
+            priority
+            className="mx-auto hidden h-auto w-[min(960px,95vw)] dark:block"
           />
         </div>
 
@@ -26,7 +36,7 @@ export default function Home() {
         <p className="mx-auto mt-6 max-w-3xl text-lg text-ax-sub">
           Axiom blends AI assistants, real-time competitive pricing, and Axiom Coin to
           remove friction across retail, travel, hospitality, and our flagship sports &
-          events facility.
+          entertainment complex.
         </p>
 
         <div className="mt-8 flex items-center justify-center gap-3">
@@ -53,7 +63,7 @@ export default function Home() {
             We’re building the rails for “just-in-time” commerce: an AI concierge that can
             shop across platforms, surface verified prices & availability, and settle with
             Axiom Coin. The same assistant orchestrates in-venue experiences—entry,
-            lockers, F&amp;B, and more.
+            locker rooms, F&amp;B, retail, fitness center, and more.
           </p>
         </div>
 
@@ -72,7 +82,7 @@ export default function Home() {
         <div className="ax-glass p-6">
           <h2 className="text-2xl font-bold">Flagship Facility</h2>
           <p className="mt-3 text-ax-sub">
-            We’re designing a next-gen sports & entertainment campus to prove what’s
+            We’re designing a next-gen sports & entertainment complex to prove what’s
             possible when venue operations, loyalty, and AI assistants work as one.
             Details coming soon.
           </p>
@@ -88,12 +98,12 @@ export default function Home() {
             and full-stack engineering.
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
-            <a href="mailto:careers@axiom.com" className="ax-link">
-              careers@axiom.com
+            <a href="mailto:careers@axiomcorp.co" className="ax-link">
+              careers@axiomcorp.co
             </a>
             <span className="text-ax-sub">·</span>
-            <a href="mailto:hello@axiom.com" className="ax-link">
-              hello@axiom.com
+            <a href="mailto:hello@axiomcorp.co" className="ax-link">
+              hello@axiomcorp.co
             </a>
           </div>
         </div>
