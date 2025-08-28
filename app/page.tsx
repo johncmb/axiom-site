@@ -1,20 +1,32 @@
 // app/page.tsx
+import Image from "next/image";
+
 export default function Home() {
   return (
     <main>
       {/* Hero */}
       <section className="container pt-16 md:pt-24 pb-10 text-center">
-        <div className="inline-flex items-center justify-center h-16 w-16 rounded-2xl ax-gradient shadow-soft">
-          <img src="/axiom-mark.svg" alt="Axiom mark" className="h-10 w-10" />
+        {/* Big logo + tagline */}
+        <div className="mx-auto">
+          <Image
+            src="/logo-tagline.svg"              // ← put your file at /public/logo-tagline.svg
+            alt="AXIOM — Re-imagining frictionless commerce, loyalty & payments"
+            width={1200}
+            height={420}
+            priority
+            className="mx-auto h-auto w-[min(960px,95vw)]"
+          />
         </div>
 
-        <h1 className="mt-6 text-4xl md:text-5xl font-extrabold tracking-tight">
+        {/* Keep an accessible H1 for SEO but hide it visually (tagline is in the SVG) */}
+        <h1 className="sr-only">
           Re-imagining frictionless commerce, loyalty & payments
         </h1>
 
-        <p className="mx-auto mt-4 max-w-3xl text-lg text-ax-sub">
-          Axiom blends AI assistants, real-time competitive pricing, and Axiom Coin to remove
-          friction across retail, travel, hospitality, and our flagship sports & entertainment complex.
+        <p className="mx-auto mt-6 max-w-3xl text-lg text-ax-sub">
+          Axiom blends AI assistants, real-time competitive pricing, and Axiom Coin to
+          remove friction across retail, travel, hospitality, and our flagship sports &
+          entertainment facility.
         </p>
 
         <div className="mt-8 flex items-center justify-center gap-3">
@@ -38,9 +50,10 @@ export default function Home() {
         <div className="ax-glass p-6">
           <h2 className="text-2xl font-bold">What is Axiom?</h2>
           <p className="mt-3 text-ax-sub leading-relaxed">
-            We’re building the rails for “just-in-time” commerce: an AI concierge that can shop
-            across platforms, surface verified prices & availability, and settle with Axiom Coin.
-            The same assistant orchestrates in-venue experiences—entry, lockers, F&amp;B, and more.
+            We’re building the rails for “just-in-time” commerce: an AI concierge that can
+            shop across platforms, surface verified prices & availability, and settle with
+            Axiom Coin. The same assistant orchestrates in-venue experiences—entry,
+            locker rooms, F&amp;B, retail, and more.
           </p>
         </div>
 
@@ -59,8 +72,9 @@ export default function Home() {
         <div className="ax-glass p-6">
           <h2 className="text-2xl font-bold">Flagship Facility</h2>
           <p className="mt-3 text-ax-sub">
-            We’re designing a next-gen sports & entertainment complex to prove what’s possible
-            when venue operations, loyalty, and AI assistants work as one. Details coming soon.
+            We’re designing a next-gen sports & entertainment complex to prove what’s
+            possible when venue operations, loyalty, and AI assistants work as one.
+            Details coming soon.
           </p>
         </div>
       </section>
@@ -74,9 +88,13 @@ export default function Home() {
             and full-stack engineering.
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
-            <a href="mailto:careers@axiom.com" className="ax-link">careers@axiomcorp.co</a>
+            <a href="mailto:careers@axiomcorp.co" className="ax-link">
+              careers@axiom.com
+            </a>
             <span className="text-ax-sub">·</span>
-            <a href="mailto:hello@axiom.com" className="ax-link">hello@axiomcorp.co</a>
+            <a href="mailto:hello@axiomcorp.co" className="ax-link">
+              hello@axiom.com
+            </a>
           </div>
         </div>
       </section>
