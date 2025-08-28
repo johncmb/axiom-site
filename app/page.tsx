@@ -14,7 +14,7 @@ export default function Home() {
 
         <p className="mx-auto mt-4 max-w-3xl text-lg text-ax-sub">
           Axiom blends AI assistants, real-time competitive pricing, and Axiom Coin to remove
-          friction across retail, travel, hospitality, and our flagship sports & events facility.
+          friction across retail, travel, hospitality, and our flagship sports & entertainment complex.
         </p>
 
         <div className="mt-8 flex items-center justify-center gap-3">
