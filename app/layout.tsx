@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "Re-imagining frictionless commerce, loyalty & payments with AI assistants and Axiom Coin.",
   themeColor: "#0b0d10",
-  icons: { icon: "/favicon.svg" },
+  icons: { icon: "/favicon-32.png" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
