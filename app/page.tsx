@@ -1,101 +1,63 @@
 // app/page.tsx
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main>
-      {/* Hero */}
-      <section className="container pt-16 md:pt-24 pb-10 text-center">
-        {/* Big logo + tagline */}
-        <div className="mx-auto">
+      {/* HERO */}
+      <section className="relative flex min-h-[70vh] items-center justify-center">
+        <div className="mx-auto flex w-full max-w-6xl flex-col items-center px-4">
+          {/* Light mode artwork */}
           <Image
-            src="/logo-tagline.svg"              // ← put your file at /public/logo-tagline.svg
-            alt="AXIOM — Re-imagining frictionless commerce, loyalty & payments"
+            src="/logo-tagline-light.svg"
+            alt="AXIOM — Re-imagining frictionless commerce, loyalty, and payments."
             width={1200}
             height={420}
             priority
-            className="mx-auto h-auto w-[min(960px,95vw)]"
+            className="dark:hidden h-auto w-full max-w-[980px]"
           />
-        </div>
+          {/* Dark mode artwork */}
+          <Image
+            src="/logo-tagline-dark.svg"
+            alt="AXIOM — Re-imagining frictionless commerce, loyalty, and payments."
+            width={1200}
+            height={420}
+            priority
+            className="hidden h-auto w-full max-w-[980px] dark:block"
+          />
 
-        {/* Keep an accessible H1 for SEO but hide it visually (tagline is in the SVG) */}
-        <h1 className="sr-only">
-          Re-imagining frictionless commerce, loyalty & payments
-        </h1>
-
-        <p className="mx-auto mt-6 max-w-3xl text-lg text-ax-sub">
-          Axiom blends AI assistants, real-time competitive pricing, and Axiom Coin to
-          remove friction across retail, travel, hospitality, and our flagship sports &
-          entertainment complex.
-        </p>
-
-        <div className="mt-8 flex items-center justify-center gap-3">
-          <a
-            href="#learn"
-            className="rounded-xl2 ax-gradient text-black font-semibold px-5 py-3"
-          >
-            Learn more
-          </a>
-          <a
-            href="#careers"
-            className="rounded-xl2 border border-white/15 bg-white/5 px-5 py-3 font-semibold hover:bg-white/10"
-          >
-            Careers
-          </a>
-        </div>
-      </section>
-
-      {/* What / Why */}
-      <section id="learn" className="container grid gap-6 md:grid-cols-2">
-        <div className="ax-glass p-6">
-          <h2 className="text-2xl font-bold">What is Axiom?</h2>
-          <p className="mt-3 text-ax-sub leading-relaxed">
-            We’re building the rails for “just-in-time” commerce: an AI concierge that can
-            shop across platforms, surface verified prices & availability, and settle with
-            Axiom Coin. The same assistant orchestrates in-venue experiences—entry,
-            locker rooms, F&amp;B, retail, and more.
-          </p>
-        </div>
-
-        <div className="ax-glass p-6">
-          <h2 className="text-2xl font-bold">Why now?</h2>
-          <ul className="mt-3 space-y-2 text-ax-sub">
-            <li>• Consumers expect chat-first, agentic experiences.</li>
-            <li>• Vendors need dynamic pricing + loyalty that actually converts.</li>
-            <li>• A single wallet (Axiom Coin) simplifies checkout everywhere.</li>
-          </ul>
-        </div>
-      </section>
-
-      {/* Facility */}
-      <section className="container mt-6">
-        <div className="ax-glass p-6">
-          <h2 className="text-2xl font-bold">Flagship Facility</h2>
-          <p className="mt-3 text-ax-sub">
-            We’re designing a next-gen sports & entertainment complex to prove what’s
-            possible when venue operations, loyalty, and AI assistants work as one.
-            Details coming soon.
-          </p>
-        </div>
-      </section>
-
-      {/* Careers */}
-      <section id="careers" className="container mt-6 mb-16">
-        <div className="ax-glass p-6">
-          <h2 className="text-2xl font-bold">Careers</h2>
-          <p className="mt-3 text-ax-sub">
-            We’re quietly hiring senior builders across product, design, AI/agent systems,
-            and full-stack engineering.
-          </p>
-          <div className="mt-4 flex flex-wrap gap-3">
-            <a href="mailto:careers@axiomcorp.co" className="ax-link">
-              careers@axiomcorp.co
-            </a>
-            <span className="text-ax-sub">·</span>
-            <a href="mailto:hello@axiomcorp.co" className="ax-link">
-              hello@axiomcorp.co
-            </a>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+            <Link
+              href="#product"
+              className="rounded-xl border border-black/10 bg-black px-5 py-3 text-sm font-semibold text-white shadow-sm hover:opacity-90 dark:border-white/10 dark:bg-white dark:text-black"
+            >
+              Learn more
+            </Link>
+            <Link
+              href="#contact"
+              className="rounded-xl border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-black hover:opacity-90 dark:border-white/10 dark:bg-transparent dark:text-white"
+            >
+              Get in touch
+            </Link>
           </div>
+        </div>
+      </section>
+
+      {/* OPTIONAL SECTIONS (keep or remove) */}
+      <section id="product" className="border-t border-black/5 py-16 dark:border-white/10">
+        <div className="mx-auto max-w-4xl px-4 text-center text-neutral-600 dark:text-neutral-300">
+          <h2 className="mb-3 text-2xl font-semibold text-black dark:text-white">Product</h2>
+          <p>
+            AXIOM unifies commerce, loyalty, and payments with a single guest experience.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" className="border-t border-black/5 py-16 dark:border-white/10">
+        <div className="mx-auto max-w-4xl px-4 text-center text-neutral-600 dark:text-neutral-300">
+          <h2 className="mb-3 text-2xl font-semibold text-black dark:text-white">Contact</h2>
+          <p>Reach us at <a className="underline" href="mailto:hello@axiom.example">hello@axiom.example</a>.</p>
         </div>
       </section>
     </main>
